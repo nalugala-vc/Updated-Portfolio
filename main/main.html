@@ -11,27 +11,27 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="landing">
+    <div class="landing" id="home">
         <div>
             <nav>
                 <div class="main_nav">
                     <li class="active">
-                        <a href="">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="">Education</a>
+                        <a href="#education">Education</a>
                     </li>
                     <li>
-                        <a href="">Skills</a>
+                        <a href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </div>
             </nav>
@@ -86,8 +86,8 @@
             </div>
             <div class="row3 row">
                 <div class="work">
-                    <div class="ask">
-                        <button>
+                    <div class="ask" id="rick-roll">
+                        <button >
                             Ask me how
                         </button>
                         <div class="arrow">
@@ -126,7 +126,7 @@
             </div>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="left">
             <div class="sparkle">
                 <p><b>Sparkle</b></p>
@@ -150,7 +150,7 @@
             </p>
         </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="projects">
         <div>
             <div class="ui-ux">
                 <div class="left">
@@ -233,7 +233,7 @@
         </div>
 
     </div>
-    <div class="education">
+    <div class="education" id="education">
         <div class="right">
             <p>My Resume</p>
             <div class="resume">
@@ -260,7 +260,7 @@
         </div>
     </div>
     <div class="separator"></div>
-    <div class="skills">
+    <div class="skills" id="skills">
         <div class="first">
             <p>When your vision is clear</p>
         </div>
@@ -345,7 +345,7 @@
             <p>Strategy is easy </p>
         </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="get">
             <p>Get in Touch</p>
         </div>
@@ -389,6 +389,9 @@
         });
         document.getElementById('c44').addEventListener('click',function(){
             window.location.href = 'https://github.com/nalugala-vc/BitiAgency';
+        });
+        document.getElementById('rick-roll').addEventListener('click',function(){
+            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley';
         });
     </script>
 </body>

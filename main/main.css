@@ -1,0 +1,999 @@
+@font-face {
+    font-family:classyVouge;
+    src: url(/fonts/classy_vogue/Classyvogueregular.ttf);
+}
+@font-face {
+    font-family:vogue;
+    src: url(/fonts/vogue/Vogue.ttf);
+}
+@font-face {
+    font-family:sparkle;
+    src: url(/fonts/shine-font/ShineDemo-d9qvX.otf);
+}
+@font-face {
+    font-family:spongebob;
+    src: url(/fonts/spongeboy-font/SpongeboyRegular-gx2n6.otf);
+}
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+.landing{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+    padding-bottom: 50px;
+    background-color: #bcb1ef;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.main_nav{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* margin: 00px 30%; */
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 30px;
+}
+.main_nav li{
+    list-style: none;
+    margin: 0 10px;
+    border-radius: 20px;
+    padding: 0 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main_nav li a{
+    
+    text-decoration: none;
+    color: #000;
+    font-family: classyVouge;
+    
+}
+.main_nav .active {
+    background-color: #f1effb;
+}
+.row1 .intro .top .who{
+    display: flex;
+    align-items: center;
+    width: 110px;
+    border-radius: 25px;
+    background-color: white;
+    padding: 5px;
+}
+
+.row1 .intro .top .who .hashtag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding: 7px;
+    background-color: #000;
+    border-radius: 100%;
+}
+.row1 .intro .top .who .hashtag .fa-solid{
+    color: white;
+    font-size: 10px;
+}
+.row1 .intro .top .who{
+    font-family: classyVouge;
+    font-weight: 700;
+    font-size: 12px;
+}
+.row1 .intro .top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.row1 .intro .top .instagram,
+.row1 .intro .top .linked{
+    padding: 7px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+}
+.row1 .intro .top >*{
+    margin-right:3px ;
+}
+.row1 .intro{
+    width: 430px;
+}
+.row1 .intro .bottom p{
+    font-family: classyVouge;
+    color: #fff;
+}
+.row1,.row2{
+    display: flex;
+    align-items: center;
+}
+.row1 >*{
+    margin: 20px;
+}
+.row1 .designer,.row2 .designer,.row3 .designer,.row4 .designer{
+    font-size: 8.7em;
+    font-family:vogue ;
+    color: #e8e4fc;
+}
+
+.row1 .profile{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    background-color: #f2f0f9;
+}
+.row1 .profile img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.row2 .multifaceted{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.row2 .multifaceted .progress-container{
+    width: 170px;
+    height: 3px;
+    background-color: #e8e4fc;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.row,.row2,.row3.row4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row2 .multifaceted .progress-container .progress-bar {
+    width: 70%; 
+    height: 100%;
+    background-color: #bcb1ef; 
+    transition: width 1s ease; 
+}
+.row2 .multifaceted .arrow,.row3 .arrow{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #000;
+}
+.row2 .multifaceted .arrow .fa-solid,.row3 .arrow .fa-solid{
+    font-size: 10px;
+    color: white;
+}
+.row3 .arrow .fa-solid{
+    transform: rotate(45deg);
+}
+.row2 .multifaceted p{
+    padding: 0;
+    margin: 5px 0;
+    margin-top: 10px;
+    font-family: classyVouge;
+    font-size: 18px;
+    font-weight: 600;
+}
+.row2 .multifaceted .percent{
+    display: flex;
+    justify-content: end;
+}
+.image-container {
+    margin-left: -30px;
+    position: relative;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 100%;
+}
+
+.image {
+    position: absolute;
+    border-radius: 100%;
+    width: 100%; 
+    height: 100%;
+    border: 2px solid #fff; 
+    transition: transform 0.3s, cursor 0.3s;
+}
+
+.image:nth-child(2) {
+    left: 25px;
+}
+
+.image:nth-child(3) {
+    left: 50px;
+}
+
+.image:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.row3 button{
+    height: 35px;
+    width: 100px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-family: classyVogue;
+    font-weight: 700;
+}
+.row3 .ask,.row3 .work,.row3,.row4{
+    display: flex;
+    align-items: center;
+}
+.row3 .arrow{
+    margin: -10px;
+}
+.row3 .work{
+    width: 500px;
+}
+.row3 .work p{
+    margin-left: 30px;
+    color: #fff;
+    font-family: classyVouge;
+}
+.row3 .designer{
+    margin-left: 50px;
+}
+.row4 .turnup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+    border: 3px #e8e4fc solid;
+    border-radius: 100%;
+}
+.row4 .turnup .fa-arrow-turn-up{
+    transform: rotate(90deg);
+    font-size: 25px;
+    color: #e8e4fc;
+}
+.row4 .other-traits{
+    position: relative;
+    margin-left: 30px;
+    margin-top: -90px;
+    display: flex;
+    height: 150px;
+    padding: 7px;
+    background-color: white;
+    border-radius: 20px;
+}
+.row4 .other-traits .right{
+    margin-left: 15px;
+}
+.row4 .other-traits .img-div{
+    height: 150px;
+    width: 130px;
+    border-radius: 20px;
+}
+
+.row4 .other-traits .img-div img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+.row4 .other-traits .right{
+    width: 200px;
+}
+.row4 .other-traits .my-traits{
+    display: flex;
+    align-items: center;
+}
+.row4 .other-traits .my-traits .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    background-color: #e8e4fc;
+    border-radius: 5px;
+}
+.row4 .other-traits .my-traits p,.row4 .other-traits .traits p{
+    font-family: classyVouge;
+    font-weight: 700;
+    font-size: 13px;
+}
+.row4 .other-traits .traits p{
+    margin-bottom: 10px;
+}
+.row2,.row3{
+    margin-bottom: 40px;
+}
+
+/* pulse animation */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .row1 .designer ,.row3 .designer,.skills .first,.skills .second{
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  /*ABOUT*/
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.about .profile {
+    position: relative;
+    background-color: #e8e4fc;
+    border-radius: 100%;
+    width: 270px; 
+    height: 270px; 
+}
+
+.about .profile .img,
+.about .profile .img2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 100%;
+transition: opacity 0.5s ease; 
+}
+
+/* .about .profile .img2 {
+    top: -40px;
+} */
+
+.about .profile .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.about .profile .img2 img{
+    width: 98%;
+    height: 98%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.about .img2 {
+opacity: 0;
+}
+
+.about .profile:hover .img2 {
+opacity: 1;
+}
+.about .left .sparkle{
+    position: relative;
+}
+.about .left .sparkle p{
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    font-family: classyVouge;
+    font-weight: 700;
+    font-size: 20px;
+    transform: rotate(325deg);
+}
+.about .left .sparkle b{
+    font-family: sparkle;
+    color: #bcb1ef;
+}
+
+.about .left .imagine{
+    position: relative;
+}
+.about .left .imagine p{
+    position: absolute;
+    top: -40px;
+    right: -90px;
+    font-family: classyVouge;
+    font-weight: 700;
+    font-size: 20px;
+    transform: rotate(325deg);
+}
+.about .left .imagine b{
+    font-family: spongebob;
+    color: #bcb1ef;
+    font-size: 22px;
+}
+.about .left  .imagination{
+    position: relative;
+}
+.about .left .imagination .img{
+    position: absolute;
+    top: -70px;
+    right: -90px;
+    height: 150px;
+    width: 150px;
+}
+.about .left .imagination .img img{
+    width: 100%;
+    height: 100%;
+    transform: rotate(15deg);
+}
+.about .right{
+    margin-left: 150px;
+    width: 400px;
+}
+.about .right h2{
+    display: flex;
+    justify-content: end;
+    font-family: vogue;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.about .right p{
+    font-family: classyVouge;
+    font-size: 18px;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    
+}
+.about #sparkle {
+    font-family: sparkle;
+    font-size: 10px;
+    color: #bcb1ef;
+}
+.about #spongebob {
+    font-family: spongebob;
+    font-size: 12px;
+    color: #bcb1ef;
+}
+.about #awesome {
+    font-family: vogue;
+    color: #bcb1ef;
+}
+
+/*PROJECTS */
+
+.projects{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #eeebff;
+    padding: 80px 0;
+}
+.projects .ui-ux,.projects .developer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects .ui-ux .left{
+    width: 400px;
+    font-family: vogue;
+    font-size: 3.9rem;
+    font-weight: 700;
+}
+.projects .ui-ux .left b, .projects .developer .left b{
+    color: #bcb1ef;
+}
+.projects .developer .left{
+    width: 150px;
+    font-family: vogue;
+    font-size: 3.9rem;
+    font-weight: 700;
+    margin-left: 100px;
+}
+/*project cards */
+
+
+.container {
+    height: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.projects .developer{
+    margin-top: 100px;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 280px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+.input1:hover + label {
+    width: 450px;
+}
+.input2:hover + label {
+    width: 450px;
+}
+
+.input1:hover + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+.input2:hover + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('./uiux\ \(4\).png');
+}
+.card[for="c2"] {
+    background-image: url('./uiux\ \(1\).png');
+}
+.card[for="c3"] {
+    background-image: url('./uiux\ \(2\).png');
+}
+.card[for="c4"] {
+    background-image: url('./uiux\ \(3\).png');
+}
+
+
+.card[for="c11"] {
+    background-image: url('./uiux\ \(1\).png');
+}
+.card[for="c22"] {
+    background-image: url('./uiux\ \(4\).png');
+}
+.card[for="c33"] {
+    background-image: url('./project\ \(3\).png');
+}
+.card[for="c44"] {
+    background-image: url('./project\ \(1\).png');
+}
+
+/* Education */
+
+.education{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.education >*{
+    margin: 50px;
+}
+.education .left{
+    width: 450px;
+}
+.education .left h2{
+    font-family: vogue;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.education .left p{
+    font-family: classyVouge;
+    font-size: 20px;
+}
+.education .left b{
+    font-family: vogue;
+    font-size: 18px;
+    font-weight: 700;
+}
+.education .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.education .right .resume{
+    height: 200px;
+    width: 200px;
+}
+.education .right p{
+    color: #bcb1ef;
+    font-size: 20px;
+    font-family: sparkle;
+}
+.education .right .resume img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+/*twisting animation*/
+@keyframes twistAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.education .right p {
+    animation: twistAnimation 5s linear infinite;
+}
+
+.separator{
+    height: 2px;
+    width: 100vw;
+    background-color: #b0b0ba;
+}
+/*SKILLS*/
+.skills{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills .skill-set {
+    width: 500px;
+}
+.skills .skill-set h2{
+    font-family: vogue;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.skills .skill-set .skills-div{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills .skill-set .skills-div .skill{
+    margin-right: 14px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 15px;
+    background-color: #f7edff;
+}
+
+.skills .skill-set .skills-div .skill img{
+    height: 70%;
+    width: 70%;
+    object-fit: cover;
+}
+.skills .skill-set .skills-wrds{
+    display: flex;
+}
+.skills .skill-set li,.skills .skill-set p{
+    font-family: classyVouge;
+    font-size: 19px;
+}
+.skills .first,.skills .second{
+    width: 200px;
+    position: relative;
+    font-family: spongebob;
+    font-size: 30px;
+    color: #bcb1ef;
+}
+.skills .first p{
+    position: absolute;
+    top: -250px;
+    transform: rotate(325deg);
+}
+.skills .second p {
+    position: absolute;
+    bottom: -250px;
+    transform: rotate(325deg);
+}
+
+/*contacts page */
+.contact {
+    width: 100vw;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #e8e4fc;
+}
+.contact .get{
+    display: flex;
+    justify-content: center;
+}
+.contact .get p{
+    font-family: classyVouge;
+    font-size: 100px;
+    color: #bcb1ef;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.my-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-contact >*{
+    margin: 20px;
+}
+.my-contact p{
+    font-family: classyVouge;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.my-contact p i{
+    margin-right: 10px;
+}
+.my-contact a{
+    color: #000;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .row1 .intro{
+        width: 300px;
+    }
+    .row1 .designer,.row2 .designer,.row3 .designer,.row4 .designer{
+        font-size: 5.7em;
+    }
+    .row1 .profile{
+        height: 100px;
+        width: 100px;
+    }
+    .row2 .multifaceted{
+        margin-left: 50px;
+    }
+    .row2 .multifaceted .progress-container{
+        width: 150px;
+    }
+    .row3 .work{
+        width: 400px;
+    }
+    .row3 .work p{
+        font-size: 12px;
+    }
+    .row4 .turnup{
+        height: 80px;
+        width: 80px;
+    }
+    .row4 .other-traits{
+        height: 130px;
+    }
+    .row4 .other-traits .img-div{
+        height: 130px;
+        width: 120px;
+        border-radius: 13px;
+    }
+    .about .profile {
+        width: 250px; 
+        height: 250px; 
+    }
+    .projects .ui-ux .left{
+        width: 270px;
+        font-size: 2.9rem;
+        transform: rotate(270deg);
+    }
+    .projects .developer .left{
+        width: 100px;
+        font-size: 2.9rem;
+        margin-left: 40px;
+        transform: rotate(90deg);
+    }
+    .container {
+        height: 250px;
+    }
+    .input1:checked + label {
+        width: 250px;
+    }
+    .input2:checked + label {
+        width: 250px;
+    }
+    .education .left{
+        width: 400px;
+    }
+    .education .left p{
+        font-size: 15px;
+    }
+    .education .left b{
+        font-size: 13px;
+    }
+    .education >*{
+        margin: 35px;
+    }
+    .education .right p{
+        font-size: 1px;
+    }
+    .skills .first,.skills .second{
+        font-size: 25px;
+        width: 150px;
+    }
+    .contact .get p{
+        font-size: 80px;
+    }
+    .my-contact p{
+        font-size: 18px;
+    }
+    .my-contact p i{
+        margin-right: 8px;
+    }
+    .separator{
+        height: 2px;
+        width: 100%;
+        background-color: #b0b0ba;
+    }
+}
+@media screen and (max-width: 830px) {
+    .row1 .intro{
+        width: 300px;
+    }
+    .row1 .designer,.row2 .designer,.row3 .designer,.row4 .designer{
+        font-size: 3.7em;
+    }
+    .row1 .profile{
+        height: 80px;
+        width: 80px;
+    }
+    .row1 .intro .bottom p{
+        font-size: 13px;
+    }
+    .row3 .work{
+        width: 300px;
+    }
+    .row3 .work p{
+        font-size: 12px;
+    }
+    .row4 .turnup{
+        height: 60px;
+        width: 60px;
+    }
+    .row4 .other-traits{
+        height: 110px;
+    }
+    .row4 .other-traits .img-div{
+        height: 110px;
+        width: 100px;
+        border-radius: 7px;
+    }
+    .about .profile {
+        width: 200px; 
+        height: 200px; 
+    }
+    .projects .ui-ux .left{
+        width: 180px;
+        font-size: 1.9rem;
+        transform: rotate(270deg);
+    }
+    .projects .developer .left{
+        width: 60px;
+        font-size: 1.9rem;
+        margin-left: 40px;
+        transform: rotate(90deg);
+    }
+    .container {
+        height: 220px;
+    }
+    .input1:checked + label {
+        width: 220px;
+    }
+    .input2:checked + label {
+        width: 220px;
+    }
+    .card{
+        width: 60px;
+    }
+    .education .left{
+        width: 400px;
+    }
+    .education .left p{
+        font-size: 15px;
+    }
+    .education .left b{
+        font-size: 13px;
+    }
+    .education .right .resume{
+        height: 150px;
+        width: 150px;
+    }
+    .education >*{
+        margin: 20px;
+    }
+    .education .right p{
+        font-size: 10px;
+    }
+    .skills .first,.skills .second{
+        font-size: 20px;
+        width: 150px;
+    }
+    .separator{
+        height: 2px;
+        width: 100%;
+        background-color: #b0b0ba;
+    }
+    .contact .get p{
+        font-size: 60px;
+    }
+    .my-contact p{
+        font-size: 15px;
+    }
+    .my-contact p i{
+        margin-right: 5px;
+    }
+}
+
+
+.row2 .designer {
+    margin-right: 7%;
+}

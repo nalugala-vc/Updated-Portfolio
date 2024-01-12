@@ -34,6 +34,7 @@ body{
     background-color: #bcb1ef;
 }
 nav{
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
@@ -310,6 +311,8 @@ nav{
     font-size: 13px;
 }
 .row4 .other-traits .traits p{
+    font-size: 16px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 .row2,.row3{

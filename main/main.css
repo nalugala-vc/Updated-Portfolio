@@ -1,18 +1,18 @@
 @font-face {
     font-family:classyVouge;
-    src: url(/fonts/classy_vogue/Classyvogueregular.ttf);
+    src: url(/Updated-Portfolio/fonts/classy_vogue/Classyvogueregular.ttf);
 }
 @font-face {
     font-family:vogue;
-    src: url(/fonts/vogue/Vogue.ttf);
+    src: url(/Updated-Portfolio/fonts/vogue/Vogue.ttf);
 }
 @font-face {
     font-family:sparkle;
-    src: url(/fonts/shine-font/ShineDemo-d9qvX.otf);
+    src: url(/Updated-Portfolio/fonts/shine-font/ShineDemo-d9qvX.otf);
 }
 @font-face {
     font-family:spongebob;
-    src: url(/fonts/spongeboy-font/SpongeboyRegular-gx2n6.otf);
+    src: url(/Updated-Portfolio/fonts/spongeboy-font/SpongeboyRegular-gx2n6.otf);
 }
 *{
     scroll-behavior: smooth;
